@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Origin Tech Demo';
+    src: url('OriginTechDemoRegular.woff2') format('woff2'),
+        url('OriginTechDemoRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
