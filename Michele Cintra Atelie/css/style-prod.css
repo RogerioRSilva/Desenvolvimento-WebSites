@@ -1,13 +1,12 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
 }
 
 @font-face {
     font-family: "watermin";
     src: url("../font/WatermintScript.woff");
 }
-
 
 /*########## Barra Navegação ############*/
 #barra_nav{
@@ -42,71 +41,56 @@
 .menu a{
     color: gold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .menu a:hover{
     color: rgb(158, 157, 156);
 }
 
-/*######### Container Principal #############*/
-
-.cont-main{
-    width: 100%;
-    height: auto;
-    background-color: rgb(32, 32, 32);
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+/* ############## Descricao principal produto ##################*/
+.cont-descricao{
+    border-radius: 10px;
+    padding-bottom: 1rem;
 }
 
-.card{
-    width: 20%;
+.descricao-prod{
+    width: 100%;
     height: auto;
-    padding: 0.5rem;
-    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.info-prod{
+    border: 1px solid red;
+    width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.div-imgcard{
-    /* border: 2px solid rgb(63, 62, 62); */
+.div-img-prod{
     width: 100%;
-    border-radius: 20px;
-    display: flex;
-    box-shadow: 4px 6px 4px rgba(65, 64, 64, 0.692);
-    margin-bottom: 1rem;
 }
 
-.imgcard{
+.img-prod{
     width: 100%;
-    border-radius: 20px;
+}
+
+.div-img-descr{
+    border: 1px solid red;
+    width: 50%;
+    padding: 0 2rem;
+}
+
+.div-detalhes-prod{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid red;
     
-}
-
-.descricao{
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-}
-
-.valorproduto{
-    text-align: center;
-    font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight:bolder;
-    color: rgb(187, 3, 3);
-    line-height: 32px;
-    margin-bottom: 0.1rem;
-}
-
-.formapagamento{
-    text-align: center;
 }
 
 /* ######### Rodapé ########## */
