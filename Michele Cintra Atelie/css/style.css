@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: "watermin";
+    src: url("../font/WatermintScript.woff");
+}
+
 #barra_nav{
     width: 100%;
     height: auto;
@@ -14,6 +19,25 @@
     list-style-type: none;
 }
 
-#barra_nav > li{
-    display:;
+.barra-naveg{
+    background-color: black;   
+}
+
+.logo h2{
+    color: gold;
+    margin-left: 2rem;
+    font-family: 'watermin';
+    font-size: 55px;
+}
+
+.div-menu{
+    padding-right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu a{
+    color: gold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
 }
