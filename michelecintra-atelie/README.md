@@ -20,7 +20,7 @@ Site está sendo desenvolvido com intuito de treinar o deenvolvimento de sites.
 
 &nbsp;
 > #### Fluxograma
-![Imagem do fluxo da sistema de vendas do site](docs\fluxograma_webSite.png)
+![Imagem do fluxo da sistema de vendas do site](michelecintra-atelie\docs\fluxograma_webSite.png)
 
  ###### Fluxograma ainda em Desenvolvimento
 
