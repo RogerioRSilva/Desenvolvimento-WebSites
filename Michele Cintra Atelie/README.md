@@ -3,6 +3,7 @@
 Site está sendo desenvolvido com intuito de treinar o deenvolvimento de sites. 
 
 
+&nbsp;
 > #### Tecnologias envolvidas
 
 
@@ -17,3 +18,10 @@ Site está sendo desenvolvido com intuito de treinar o deenvolvimento de sites.
 |VS Code| IDE onde está sendo desenvolvido o site|
 
 
+&nbsp;
+> #### Fluxograma
+![Imagem do fluxo da sistema de vendas do site](Documentação\fluxograma_webSite.png)
+
+ ###### Fluxograma ainda em Desenvolvimento
+
+ ---
