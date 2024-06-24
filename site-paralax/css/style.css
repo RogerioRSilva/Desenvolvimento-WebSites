@@ -28,6 +28,10 @@ body, html{
     margin-left: 2rem;  
 }
 
+.logo_barranavg h2:hover{
+    text-shadow: 4px 4px 5px #d58beb8a;   
+}
+
 .logo_barranavg{
     color: gold;
     font-size: 25px;
@@ -92,10 +96,16 @@ p{
 
 .caixa1{
     background-image: url(../img/IMG_20220111_083630.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .caixa2{
-    background-image: url(../img/lenco-de-quadril-modelo-shakira-danca-do-ventre.jpg);
+    background-image: url(../img/bengalas.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .caixa3{
     background-image: url(../img/imagem3.jpg);
@@ -107,7 +117,7 @@ p{
 .conteudo-titulo{
     position: absolute;
     left: 0;
-    top: 45%;
+    top: 05%;
     width: 100%;
     text-align: center;
     
@@ -125,7 +135,7 @@ p{
 
 .logo_micheleAtelie{
     color: gold;
-    background-color: #111;
+    background-color: #000000d2;
     padding: 18px;
     font-size: 55px;
     letter-spacing: 5px;
@@ -152,4 +162,65 @@ hr{
     padding: 18px;
     font-size: 25px;
     letter-spacing: 5px;
+}
+
+.container{
+    background-color: #77777770;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem;
+    position: absolute;
+    top: 20%;
+    border-radius: 30px;
+}
+
+.div-imgcard{
+    /* border: 2px solid rgb(63, 62, 62); */
+    width: 20%;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 4px 6px 4px rgba(65, 64, 64, 0.692);
+    margin-bottom: 1rem;
+}
+
+.card{
+    width: 20%;
+    height: auto;
+    padding: 0.5rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px #000000d2;
+}
+
+
+.imgcard{
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+.descricao{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.valorproduto{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bolder;
+    color: rgb(187, 3, 3);
+    line-height: 32px;
+    margin-bottom: 0.1rem;
+}
+
+.formapagamento{
+    text-align: center;
 }
