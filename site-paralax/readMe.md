@@ -21,6 +21,15 @@
 3. Realizado testes de responsividade, onde identificamos que o site ainda não está se adequando a telas diversas. **Obs.: fazer os ajustes necessários para telas diversas.**
 4. Testes dos links da barra de menu: Nesse momento está funcionando somente o link da Home pois ainda não foi desenvolvido as outras páginas. **Obs.: Desenvolver as paginas e validar links.**
 
-### Imagem com os asjustes que devo fazer ainda no site.
+> ## Proximos Ajustes
+    1º - Rever layout do site para ajustar para telas menores
+    2º - Criar as paginas do menu de navegação
+    3º - Validar como fazer integração da API do mercado pago com o site
+    4º - Criar tela de login 
+    5º - Criar integração com bando de dados e fazer os testes de cadastro
 
-![Imagem do site construido com marcações de modificações que devo realizar](docs\img_refinamento\ajustes_site_menu_links_e_definicoes.png)
+
+> ## Integração com MercadoPago
+
+### https://www.mercadopago.com.br/developers/pt/docs/split-payments/integration-configuration
+
