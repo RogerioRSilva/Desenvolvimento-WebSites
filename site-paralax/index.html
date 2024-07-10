@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paralax</title>
+    <title>Michele Cintra Ateliê</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/script.js" defer></script>
@@ -14,9 +14,15 @@
 <body>
     <header>
         <nav class="barra_navg">
-            <a href="index.html" class="logo_barranavg">
-                <h2>Michele Cintra Ateliê</h2>
-            </a>
+            <div class="logo_barranavg">
+                <div class="logo">
+                    <img src="img/icons/lotus_fino.svg" alt="">
+                </div>
+                <div class="logo_texto">
+                    <a href="index.html">Michele Cintra Ateliê</a>
+                </div>                
+            </div>
+            
             <ul class="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre</a></li>
@@ -28,7 +34,7 @@
     </header>
 
     <div class="caixa1">
-        <div class="container">
+        <div class="conteudo_produtos">
             <div class="card">
                 <div>
                     <div>
@@ -36,27 +42,28 @@
                     </div>
                     <div>
                         <p class="descricao">Descrição da peça que está a venda de forma sucinta.</p>
-                        <p class="valorproduto">R$ 89,90</p>
-                        <p class="formapagamento">3x 29,96 no cartão</p>
-                        <button class="btn btn-primary">Mais detalhes</button>
+                        <!-- <p class="valorproduto">R$ 89,90</p>
+                        <p class="formapagamento">3x 29,96 no cartão</p> -->
+                        <button id="btn_card_01" class="btn btn-dark">Mais detalhes</button>
 
-                        <dialog>
-                            <button class="btn btn-close btn_close"></button>
+                        <dialog id="dialog_01">
+                            <button id="btn_close_dialog_01" class="btn btn-close btn_close"></button>
                             <div class="interno_modal">
-                                <div>
-                                    <img class="imgcard" src="img/lenco-quadril-preto-moeda-dourada.png" alt="">
-                                </div>
-                                <div>
+                                
+                                <img  src="img/lenco-quadril-preto-moeda-dourada.png" alt="">
+
+                                <div class="informacao_produtos_modal">
                                     <h2>Nome do Produto</h2>
-                                    <p><strong>Descrição: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus at nihil fugit repellat quo et quidem molestias similique vitae ipsam, cupiditate ratione tenetur blanditiis dolorum ad magnam consectetur, deserunt perspiciatis.</p>
+                                    <p><strong>Descrição: </strong>Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Temporibus at nihil fugit repellat quo et quidem molestias similique vitae
+                                        ipsam, cupiditate ratione tenetur blanditiis dolorum ad magnam consectetur,
+                                        deserunt perspiciatis.</p>
                                     <p><strong>Valor: </strong>R$ 89,90</p>
                                     <p><strong>Forma de Pagamento: </strong>3x 29,96 no cartão</p>
                                     <img src="" alt="Bandeiras de cartões">
-                                </div>                                
-                            </div>                            
+                                </div>
+                            </div>
                         </dialog>
-
-                        
                     </div>
                 </div>
             </div>
@@ -64,31 +71,32 @@
             <div class="card">
                 <div>
                     <div>
-                        <img class="imgcard" src="img/lenco-quadril-preto-moeda-dourada.png" alt="">
+                        <img class="imgcard" src="img/lenco_vermelho_01.webp" alt="">
                     </div>
                     <div>
                         <p class="descricao">Descrição da peça que está a venda de forma sucinta.</p>
-                        <p class="valorproduto">R$ 89,90</p>
-                        <p class="formapagamento">3x 29,96 no cartão</p>
-                        <button id="btn_card_02" class="btn btn-primary">Mais detalhes</button>
+                        <!-- <p class="valorproduto">R$ 89,90</p>
+                        <p class="formapagamento">3x 29,96 no cartão</p> -->
+                        <button id="btn_card_02" class="btn btn-dark">Mais detalhes</button>
 
                         <dialog id="dialog_02">
                             <button id="btn_close_dialog_02" class="btn btn-close btn_close"></button>
                             <div class="interno_modal">
-                                <div>
-                                    <img class="imgcard" src="img/lenco-quadril-preto-moeda-dourada.png" alt="">
-                                </div>
+                                
+                                <img src="img/lenco_vermelho_01.webp" alt="">
+                                
                                 <div>
                                     <h2>Nome do Produto</h2>
-                                    <p><strong>Descrição: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus at nihil fugit repellat quo et quidem molestias similique vitae ipsam, cupiditate ratione tenetur blanditiis dolorum ad magnam consectetur, deserunt perspiciatis.</p>
+                                    <p><strong>Descrição: </strong>Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Temporibus at nihil fugit repellat quo et quidem molestias similique vitae
+                                        ipsam, cupiditate ratione tenetur blanditiis dolorum ad magnam consectetur,
+                                        deserunt perspiciatis.</p>
                                     <p><strong>Valor: </strong>R$ 89,90</p>
                                     <p><strong>Forma de Pagamento: </strong>3x 29,96 no cartão</p>
                                     <img src="" alt="Bandeiras de cartões">
-                                </div>                                
-                            </div>                            
+                                </div>
+                            </div>
                         </dialog>
-
-                        
                     </div>
                 </div>
             </div>
@@ -96,102 +104,171 @@
             <div class="card">
                 <div>
                     <div>
-                        <img class="imgcard" src="img/lenco-quadril-preto-moeda-dourada.png" alt="">
+                        <img class="imgcard" src="img/lenco_laranja_01.webp" alt="">
                     </div>
                     <div>
                         <p class="descricao">Descrição da peça que está a venda de forma sucinta.</p>
-                        <p class="valorproduto">R$ 89,90</p>
-                        <p class="formapagamento">3x 29,96 no cartão</p>
-                        <button id="btn_card_03" class="btn btn-primary">Mais detalhes</button>
+                        <!-- <p class="valorproduto">R$ 89,90</p>
+                        <p class="formapagamento">3x 29,96 no cartão</p> -->
+                        <button id="btn_card_03" class="btn btn-dark">Mais detalhes</button>
 
                         <dialog id="dialog_03">
                             <button id="btn_close_dialog_03" class="btn btn-close btn_close"></button>
                             <div class="interno_modal">
-                                <div>
-                                    <img class="imgcard" src="img/lenco-quadril-preto-moeda-dourada.png" alt="">
-                                </div>
+                                
+                                <img class="imgcard" src="img/lenco_laranja_01.webp" alt="">
+                                
                                 <div>
                                     <h2>Nome do Produto</h2>
-                                    <p><strong>Descrição: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus at nihil fugit repellat quo et quidem molestias similique vitae ipsam, cupiditate ratione tenetur blanditiis dolorum ad magnam consectetur, deserunt perspiciatis.</p>
+                                    <p><strong>Descrição: </strong>Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Temporibus at nihil fugit repellat quo et quidem molestias similique vitae
+                                        ipsam, cupiditate ratione tenetur blanditiis dolorum ad magnam consectetur,
+                                        deserunt perspiciatis.</p>
                                     <p><strong>Valor: </strong>R$ 89,90</p>
                                     <p><strong>Forma de Pagamento: </strong>3x 29,96 no cartão</p>
                                     <img src="" alt="Bandeiras de cartões">
-                                </div>                                
-                            </div>                            
+                                </div>
+                            </div>
                         </dialog>
-
-                        
                     </div>
                 </div>
             </div>
-
-        </div>
-        <div class="conteudo-titulo">
-            <span class="logo_micheleAtelie" style="font-size: 65px;">Lenços de Quadril</span>
         </div>
     </div>
-    <div class="conteudo">
-        <h2 style="font-family: watermin; color: gold; font-size: 65px;">Michele Cintra Ateliê</h2>
+    <div class="faixa_logo">
         <hr>
-        <div class="texto_produtos">
-            <p>Lenços de Quadril</p>
-            <p>Bastões</p>
-            <p>Bengalas</p>
-        </div>
-        <hr style="width: 70%;">
-        <p class="texto_mensagem">Nossos produtos estão disponíveis no site ou em nossas redes sociais</p>
+        <div class="conteudo_faixa">
+            <img class="imglogo_faixa" src="img/icons/lotus_fino.svg" alt="">
+            <a href="index.html" class="logo_faixa">
+                <p>Michele Cintra Ateliê</p>
+            </a>
+            <div class="whatsapp">
+                <img class="icon_whatsapp" src="img/icons/whatsapp.svg" alt="">
+                <p>(11) 99999-9999</p>
+            </div>            
+        </div>        
+        <hr>
     </div>
+
     <div class="caixa2">
-        <div class="container">
+        <div class="conteudo_produtos">
             <div class="card">
                 <div>
                     <div>
-                        <img class="imgcard" src="img/bastoes.png" alt="">
+                        <img class="imgcard" src="img/lenco_roxo_01.webp" alt="">
                     </div>
                     <div>
                         <p class="descricao">Descrição da peça que está a venda de forma sucinta.</p>
-                        <p class="valorproduto">R$ 65,00</p>
-                        <p class="formapagamento">3x 21,66 no cartão</p>
+                        <!-- <p class="valorproduto">R$ 89,90</p>
+                        <p class="formapagamento">3x 29,96 no cartão</p> -->
+                        <button id="btn_card_04" class="btn btn-dark">Mais detalhes</button>
+
+                        <dialog id="dialog_04">
+                            <button id="btn_close_dialog_04" class="btn btn-close btn_close"></button>
+                            <div class="interno_modal">
+                                
+                                <img class="imgcard" src="img/lenco_roxo_01.webp" alt="">
+                                
+                                <div>
+                                    <h2>Nome do Produto</h2>
+                                    <p><strong>Descrição: </strong>Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Temporibus at nihil fugit repellat quo et quidem molestias similique vitae
+                                        ipsam, cupiditate ratione tenetur blanditiis dolorum ad magnam consectetur,
+                                        deserunt perspiciatis.</p>
+                                    <p><strong>Valor: </strong>R$ 89,90</p>
+                                    <p><strong>Forma de Pagamento: </strong>3x 29,96 no cartão</p>
+                                    <img src="" alt="Bandeiras de cartões">
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
                 </div>
             </div>
+
             <div class="card">
                 <div>
                     <div>
-                        <img class="imgcard" src="img/bengalas.png" alt="">
+                        <img class="imgcard" src="img/lenco_verde_01.webp" alt="">
                     </div>
                     <div>
                         <p class="descricao">Descrição da peça que está a venda de forma sucinta.</p>
-                        <p class="valorproduto">R$ 65,00</p>
-                        <p class="formapagamento">3x 21,66 no cartão</p>
+                        <!-- <p class="valorproduto">R$ 89,90</p>
+                        <p class="formapagamento">3x 29,96 no cartão</p> -->
+                        <button id="btn_card_05" class="btn btn-dark">Mais detalhes</button>
+
+                        <dialog id="dialog_05">
+                            <button id="btn_close_dialog_05" class="btn btn-close btn_close"></button>
+                            <div class="interno_modal">
+                                
+                                <img class="imgcard" src="img/lenco_verde_01.webp" alt="">
+                                
+                                <div>
+                                    <h2>Nome do Produto</h2>
+                                    <p><strong>Descrição: </strong>Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Temporibus at nihil fugit repellat quo et quidem molestias similique vitae
+                                        ipsam, cupiditate ratione tenetur blanditiis dolorum ad magnam consectetur,
+                                        deserunt perspiciatis.</p>
+                                    <p><strong>Valor: </strong>R$ 89,90</p>
+                                    <p><strong>Forma de Pagamento: </strong>3x 29,96 no cartão</p>
+                                    <img src="" alt="Bandeiras de cartões">
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
                 </div>
             </div>
+
             <div class="card">
                 <div>
                     <div>
-                        <img class="imgcard" src="img/bastoes.png" alt="">
+                        <img class="imgcard" src="img/lenco_laranja_01.webp" alt="">
                     </div>
                     <div>
                         <p class="descricao">Descrição da peça que está a venda de forma sucinta.</p>
-                        <p class="valorproduto">R$ 65,00</p>
-                        <p class="formapagamento">3x 21,66 no cartão</p>
+                        <!-- <p class="valorproduto">R$ 89,90</p>
+                        <p class="formapagamento">3x 29,96 no cartão</p> -->
+                        <button id="btn_card_06" class="btn btn-dark">Mais detalhes</button>
+
+                        <dialog id="dialog_06">
+                            <button id="btn_close_dialog_06" class="btn btn-close btn_close"></button>
+                            <div class="interno_modal">
+                                
+                                <img class="imgcard" src="img/lenco_laranja_01.webp" alt="">
+                                
+                                <div>
+                                    <h2>Nome do Produto</h2>
+                                    <p><strong>Descrição: </strong>Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Temporibus at nihil fugit repellat quo et quidem molestias similique vitae
+                                        ipsam, cupiditate ratione tenetur blanditiis dolorum ad magnam consectetur,
+                                        deserunt perspiciatis.</p>
+                                    <p><strong>Valor: </strong>R$ 89,90</p>
+                                    <p><strong>Forma de Pagamento: </strong>3x 29,96 no cartão</p>
+                                    <img src="" alt="Bandeiras de cartões">
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="conteudo-titulo">
-            <span class="logo_micheleAtelie" style="font-size: 65px;">Bastões e Bengalas</span>
-        </div>
+        
     </div>
     <div>
         <footer>
             <div class="conteudo">
+                <img src="img/icons/lotus_fino.svg" alt="">
                 <h2 style="font-family: watermin; color: gold; font-size: 65px;">Michele Cintra Ateliê</h2>
                 <hr>
+                <div class="texto_produtos">
+                    <p>Lenços de Quadril</p>
+                    <p>Bastões</p>
+                    <p>Bengalas</p>
+                </div>
+                <hr style="width: 70%;">
+                <p class="texto_mensagem">Nossos produtos estão disponíveis no site e em nossas redes sociais</p>
             </div>
         </footer>
-    </div>    
+    </div>
 </body>
 
 </html>

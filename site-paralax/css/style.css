@@ -24,19 +24,26 @@ body, html{
     justify-content: space-between;
 }
 
-.logo_barranavg h2{
-    margin-left: 2rem;  
-}
-
-.logo_barranavg h2:hover{
-    text-shadow: 4px 4px 5px #d58beb8a;   
-}
-
 .logo_barranavg{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.logo_barranavg a{
+    margin-left: 0.9rem; 
     color: gold;
-    font-size: 25px;
-    font-family: watermin;
-    text-decoration: none;    
+    font-size: 30px;
+    font-family: watermin; 
+    text-decoration: none; 
+}
+
+.logo img{
+    width: 50px;
+    height: auto;
+    margin-left: 1rem;
 }
 
 .barra_navg ul{
@@ -74,6 +81,9 @@ body, html{
     justify-content: center;
 }
 
+.conteudo img{
+    width: 10%;
+}
 h3{
     text-transform: uppercase;
     color: #111;
@@ -87,7 +97,7 @@ p{
 .caixa1, .caixa2, .caixa3, .caixa4{
     position: relative;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.8;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -95,14 +105,14 @@ p{
 }
 
 .caixa1{
-    background-image: url(../img/IMG_20220111_083630.jpg);
+    background-image: url(../img/lenco_laranja_03.webp);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .caixa2{
-    background-image: url(../img/bengalas.png);
+    background-image: url(../img/lenco_verde_01.webp);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,32 +124,64 @@ p{
     background-image: url(../img/imagem4.jpg);
 }
 
-.conteudo-titulo{
-    position: absolute;
-    left: 0;
-    top: 05%;
+.faixa_logo{
     width: 100%;
-    text-align: center;
-    
-}
-
-.conteudo-titulo span.titulo{
-    color: #fff;
-    background-color: #111;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 5px;
+    height: auto;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
+.conteudo_faixa{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 
-.logo_micheleAtelie{
+}
+
+.imglogo_faixa{
+    width: 10%;
+}
+
+.logo_faixa{
     color: gold;
-    background-color: #000000d2;
-    padding: 18px;
-    font-size: 55px;
-    letter-spacing: 5px;
+    font-size: 100px;
     font-family: watermin;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.faixa_logo hr{
+    width: 100%;
+    border: 1px solid gold;
+    margin: 20px 0;
+}
+
+.whatsapp{
+    width: 35%;
+    height: auto;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp p{
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    color: gold;
+    letter-spacing: 5px;
+    margin-left: 1rem;
+}
+
+.icon_whatsapp{
+    width: 8%;
 }
 
 .texto_produtos{
@@ -164,18 +206,16 @@ hr{
     letter-spacing: 5px;
 }
 
-.container{
-    background-color: #77777770;
+.conteudo_produtos{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2.5rem;
-    position: absolute;
-    top: 20%;
-    border-radius: 30px;
-}
+    justify-content: space-evenly;
+    align-items: center;    
+    margin-top: 5rem;
+}    
+    
 
 .div-imgcard{
     /* border: 2px solid rgb(63, 62, 62); */
@@ -198,17 +238,15 @@ hr{
     box-shadow: 10px 10px 10px #000000d2;
 }
 
-
 .imgcard{
     width: 100%;
-    border-radius: 20px;
-    
+    border-radius: 20px;   
 }
 
 .descricao{
-    text-align: center;
+    margin-top: 0.9rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .valorproduto{
@@ -239,18 +277,27 @@ dialog {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 10px 10px 10px #000000d2;
+    box-shadow: 10px 10px 10px #000000;
+    padding: 1rem;
 }
 
+.informacao_produtos_modal{
+    width: 50%;    
+}
 
 .interno_modal{
     width: 100%;
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;    
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
+    
+}
+
+.interno_modal img{
+    width: 40%;
+    height: auto;
 }
 
 .btn_close{
@@ -269,5 +316,81 @@ dialog {
 @media screen and (min-width: 1000px){
     .interno_modal{
         flex-wrap: nowrap;
+    }   
+}
+
+@media screen and (max-width: 1000px){
+    .card{
+        width: 40%;
+    }
+
+    .div-imgcard{
+        width: 40%;
+    }
+
+    .imgcard{
+        width: 100%;
+    }
+
+    .descricao{
+        font-size: 12px;
+    }
+
+    .valorproduto{
+        font-size: 20px;
+    }
+
+    .formapagamento{
+        font-size: 12px;
+    }
+
+    .interno_modal{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .conteudo_produtos{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 70%;
+    }
+
+    .div-imgcard{
+        width: 70%;
+    }
+
+    .imgcard{
+        width: 100%;
+    }
+
+    .descricao{
+        font-size: 12px;
+    }
+
+    .valorproduto{
+        font-size: 20px;
+    }
+
+    .formapagamento{
+        font-size: 12px;
+    }
+
+    .interno_modal{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .logo_faixa{
+        font-size: 50px;
+    }
+
+    .whatsapp p{
+        font-size: 30px;
     }
 }
